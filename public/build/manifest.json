@@ -1,0 +1,61 @@
+{
+  "resources/fonts/Gilroy-Black.woff2": {
+    "file": "assets/Gilroy-Black-cf204b09.woff2",
+    "src": "resources/fonts/Gilroy-Black.woff2"
+  },
+  "resources/fonts/Gilroy-Bold.woff2": {
+    "file": "assets/Gilroy-Bold-05391b44.woff2",
+    "src": "resources/fonts/Gilroy-Bold.woff2"
+  },
+  "resources/fonts/Gilroy-Medium.woff2": {
+    "file": "assets/Gilroy-Medium-e61f2165.woff2",
+    "src": "resources/fonts/Gilroy-Medium.woff2"
+  },
+  "resources/fonts/Gilroy-Regular.woff2": {
+    "file": "assets/Gilroy-Regular-8ae963ef.woff2",
+    "src": "resources/fonts/Gilroy-Regular.woff2"
+  },
+  "resources/fonts/Gilroy-SemiBold.woff2": {
+    "file": "assets/Gilroy-SemiBold-d8e57f7f.woff2",
+    "src": "resources/fonts/Gilroy-SemiBold.woff2"
+  },
+  "resources/images/icons/checking.svg": {
+    "file": "assets/checking-b1a6b2c2.svg",
+    "src": "resources/images/icons/checking.svg"
+  },
+  "resources/images/icons/done.svg": {
+    "file": "assets/done-1d3a970b.svg",
+    "src": "resources/images/icons/done.svg"
+  },
+  "resources/images/icons/progress.svg": {
+    "file": "assets/progress-8a59d48a.svg",
+    "src": "resources/images/icons/progress.svg"
+  },
+  "resources/images/icons/time-forward.svg": {
+    "file": "assets/time-forward-2a79c9d5.svg",
+    "src": "resources/images/icons/time-forward.svg"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-26a58f71.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/Gilroy-Regular-8ae963ef.woff2",
+      "assets/Gilroy-Medium-e61f2165.woff2",
+      "assets/Gilroy-SemiBold-d8e57f7f.woff2",
+      "assets/Gilroy-Bold-05391b44.woff2",
+      "assets/Gilroy-Black-cf204b09.woff2",
+      "assets/done-1d3a970b.svg",
+      "assets/checking-b1a6b2c2.svg",
+      "assets/progress-8a59d48a.svg",
+      "assets/time-forward-2a79c9d5.svg"
+    ],
+    "css": [
+      "assets/app-26a58f71.css"
+    ],
+    "file": "assets/app-879d6456.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
