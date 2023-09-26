@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\PostController::class, 'index'])->name
-('home');
+Route::get('/', [PostController::class, 'bestPost'])->name('home');
+Route::get('/posts', [PostController::class, 'index'])->name('index');

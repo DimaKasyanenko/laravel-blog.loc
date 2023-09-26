@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header-inner flex items-center justify-between lg:justify-start">
             <div class="header-logo shrink-0">
-                <a href="index.html" rel="home">
+                <a href="{{ route('home') }}" rel="home">
                     <img alt="CutCode"
                          class="w-[148px] md:w-[201px] h-[36px] md:h-[50px] inline-block"
                          src="images/nav/logo.svg"
@@ -12,7 +12,7 @@
 
             <div class="header-menu grow hidden lg:flex items-center ml-8 mr-8 gap-8">
                 <nav class="2xl:flex gap-8">
-                    <a href="articles.html"
+                    <a href="{{ route('index') }}"
                        class="ml-4 mr-4 text-white hover:text-pink"
                     >
                         Статьи

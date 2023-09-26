@@ -10,18 +10,18 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index1()
+    public function index()
     {
-        $posts = Post::all();
+        $posts = Post::orderBy('created_at', 'desc')->paginate('6');
 
         return view('posts.index', compact('posts'));
     }
 
-    public function index()
+    public function bestPost()
     {
-        $posts = Post::orderBy('views', 'desc')->take(6)->get();
+        $posts = Post::orderBy('views', 'desc')->take(2)->get();
 
-        return view('posts.index', compact('posts'));
+        return view('posts.home', compact('posts'));
     }
 
     /**
