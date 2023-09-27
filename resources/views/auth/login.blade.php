@@ -34,7 +34,7 @@
         <div class="space-y-3 mt-5">
             <div class="text-xxs md:text-xs">
                 <a class="text-white hover:text-white/70 font-bold"
-                   href="forgot.html"
+                   href="{{ route('forgot') }}"
                 >
                     Забыли пароль?
                 </a>

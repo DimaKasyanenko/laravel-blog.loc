@@ -36,7 +36,7 @@
     "src": "resources/images/icons/time-forward.svg"
   },
   "resources/js/app.css": {
-    "file": "assets/app-26a58f71.css",
+    "file": "assets/app-72dd681c.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
@@ -52,9 +52,9 @@
       "assets/time-forward-2a79c9d5.svg"
     ],
     "css": [
-      "assets/app-26a58f71.css"
+      "assets/app-72dd681c.css"
     ],
-    "file": "assets/app-879d6456.js",
+    "file": "assets/app-16f0baf6.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
