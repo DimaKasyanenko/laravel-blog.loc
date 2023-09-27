@@ -12,6 +12,8 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Testing\Fluent\Concerns\Has;
+use Laravel\Socialite\Facades\Socialite;
 use Str;
 
 class AuthController extends Controller
@@ -95,5 +97,27 @@ class AuthController extends Controller
         }
 
         return redirect()->route('forgot')->with('Произошла ошибка');
+    }
+
+    public function github()
+    {
+        return Socialite::driver('github')->redirect();
+    }
+
+    public function githubCallback()
+    {
+        $githubUser = Socialite::driver('github')->user();
+
+        $user = User::query()->updateOrCreate([
+            'github_id' => $githubUser->id,
+        ], [
+            'name' => $githubUser->id,
+            'email' => $githubUser->email,
+            'password' => bcrypt(str()->random(20))
+        ]);
+
+        auth()->login($user);
+
+        return redirect()->route('dashboard.index');
     }
 }

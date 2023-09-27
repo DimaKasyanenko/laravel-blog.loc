@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,11 @@ Route::middleware('guest')->group(function () {
 
     Route::post('/register', [AuthController::class, 'store'])
          ->name('register');
+
+    Route::get('/auth/socialite/githab', [AuthController::class, 'github'])->name
+    ('github');
+
+    Route::get('/auth/socialite/github/callback', [AuthController::class, 'githubCallback'])->name('gihub-callback');
 });
 
 
